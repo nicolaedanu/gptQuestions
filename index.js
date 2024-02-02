@@ -4,7 +4,7 @@ const axios = require('axios');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000
 
 // Set up middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: true }));
