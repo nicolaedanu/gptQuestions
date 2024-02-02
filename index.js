@@ -13,11 +13,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-const getChatGptResponse = async (message, context) => {
+const getChatGptResponse = async (initialMessage, context) => {
     if (!context) {
         context = "";
     }
-    const input = `{"1":{"question":"${message}","role":"engineering manager","interview_type":"","attributes":"${context}"}}`
+    const message = initialMessage.replace(/[\r\n]+/g, "")
+    const input = `{"0":{"question":"${message}","role":"engineering manager","interview_type":"","attributes":"${context}"}}`
     console.log(input)
     const encodedInput = encodeURIComponent(input)
     let config = {
