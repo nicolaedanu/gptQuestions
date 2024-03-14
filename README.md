@@ -5,24 +5,24 @@ This is a simple Express.js application that uses the GPT-3 model to generate re
 ## Installation
 
 1. Clone the repository:
-\`\`\`sh
-git clone <repository-url>
-\`\`\`
+```bash
+git clone [<repository-url>](https://github.com/nicolaedanu/gptQuestions)
+```
 2. Navigate to the project directory:
-\`\`\`sh
+```bash
 cd gptquestions
-\`\`\`
+```
 3. Install the dependencies:
-\`\`\`sh
+```bash
 npm install
-\`\`\`
+```
 
 ## Usage
 
 1. Start the server:
-\`\`\`sh
+```bash
 npm start
-\`\`\`
+```
 2. Open your web browser and navigate to `http://localhost:3000`.
 
 ## Features
